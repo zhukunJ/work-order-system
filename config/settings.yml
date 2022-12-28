@@ -1,0 +1,61 @@
+script:
+  path: ./static/scripts
+settings:
+  application:
+    domain: localhost:8002
+    host: 0.0.0.0
+    ishttps: false
+    mode: dev
+    name: ferry-test
+    port: "8002"
+    readtimeout: 1
+    writertimeout: 2
+  database:
+    dbtype: mysql
+    host: 101.42.13.214
+    name: ferry
+    password: intel5g
+    port: 3306
+    username: root
+  domain:
+    gethost: 1
+    url: localhost:9527
+  email:
+    alias: 工单待您审批
+    host: smtp.126.com
+    pass: UTXGEJFQTCJNDAHQ
+    port: 465
+    user: kaikebak8s@126.com
+  gorm:
+    logmode: 0
+    maxidleconn: 0
+    maxopenconn: 20000
+  jwt:
+    secret: ferry
+    timeout: 86400
+  ldap:
+    anonymousquery: 0
+    basedn: dc=fdevops,dc=com
+    bindpwd: 123456
+    binduserdn: cn=admin,dc=fdevops,dc=com
+    host: localhost
+    port: 389
+    tls: 0
+    userfield: uid
+  log:
+    compress: 1
+    consolestdout: 1
+    filestdout: 0
+    level: debug
+    localtime: 1
+    maxage: 30
+    maxbackups: 300
+    maxsize: 10240
+    path: ./logs/ferry.log
+  public:
+    islocation: 0
+  redis:
+    url: redis://101.42.13.214:6379
+  ssl:
+    key: keystring
+    pem: temp/pem.pem

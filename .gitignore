@@ -1,0 +1,12 @@
+.idea
+static/uploadfile
+ferry
+temp/
+!temp
+vendor
+tmp/
+logs
+mysql/data
+redis/data
+data/
+needinit
