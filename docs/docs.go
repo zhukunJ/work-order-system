@@ -3102,8 +3102,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "",
 	Schemes:     []string{},
-	Title:       "ferry API",
-	Description: "基于Gin + Vue + Element UI前后端分离的工单系统的接口文档\n添加qq群: 1127401830 进入技术交流群 请备注，谢谢！",
+	Title:       "API",
+	Description: "基于Gin + Vue + Element UI前后端分离的工单系统的接口文档",
 }
 
 type s struct{}

@@ -471,7 +471,6 @@ info:
   contact: {}
   description: |-
     基于Gin + Vue + Element UI前后端分离的工单系统的接口文档
-    添加qq群: 1127401830 进入技术交流群 请备注，谢谢！
   license:
     name: MIT
     url: https://github.com/lanyulei/ferry/blob/master/LICENSE
