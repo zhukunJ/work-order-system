@@ -16,7 +16,7 @@ RUN echo -e "http://mirrors.aliyun.com/alpine/v3.11/main\nhttp://mirrors.aliyun.
 WORKDIR /opt/workflow/ferry
 
 COPY --from=build /opt/workflow/ferry/ferry /opt/workflow/ferry/
-COPY config/ /opt/workflow/ferry/default_config/
+COPY config/ /opt/workflow/ferry/config/
 COPY template/ /opt/workflow/ferry/template/
 COPY docker/entrypoint.sh /opt/workflow/ferry/
 RUN mkdir -p logs static/uploadfile static/scripts static/template
