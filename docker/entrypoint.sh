@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
-if [[ -f /opt/workflow/workctl/config/needinit ]]
+if [[ -f /opt/workflow/ferry/config/needinit ]]
 then
-    /opt/workflow/workctl/workctl init -c=/opt/workflow/workctl/config/settings.yml
-    rm -f /opt/workflow/workctl/config/needinit
+    /opt/workflow/ferry/ferry init -c=/opt/workflow/ferry/config/settings.yml
+    rm -f /opt/workflow/ferry/config/needinit
 fi
-/opt/workflow/workctl/workctl server -c=/opt/workflow/workctl/config/settings.yml
+/opt/workflow/ferry/ferry server -c=/opt/workflow/ferry/config/settings.yml

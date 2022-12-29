@@ -11,11 +11,11 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:               "workctl",
+	Use:               "ferry",
 	Short:             "-v",
 	SilenceUsage:      true,
 	DisableAutoGenTag: true,
-	Long:              `workctl`,
+	Long:              `ferry`,
 	Args: func(cmd *cobra.Command, args []string) error {
 		if len(args) < 1 {
 			return errors.New("requires at least one arg")
@@ -24,7 +24,7 @@ var rootCmd = &cobra.Command{
 	},
 	PersistentPreRunE: func(*cobra.Command, []string) error { return nil },
 	Run: func(cmd *cobra.Command, args []string) {
-		usageStr := `欢迎使用 workctl，可以使用 -h 查看命令`
+		usageStr := `欢迎使用 ferry，可以使用 -h 查看命令`
 		logger.Infof("%s\n", usageStr)
 	},
 }
