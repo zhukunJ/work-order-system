@@ -19,7 +19,7 @@ settings:
     username: root
   domain:
     gethost: 1
-    url: localhost:9527
+    url: http://101.42.13.214:8001
   email:
     alias: 工单待您审批
     host: smtp.126.com
