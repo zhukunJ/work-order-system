@@ -18,8 +18,8 @@ WORKDIR /opt/workflow/ferry
 COPY --from=build /opt/workflow/ferry/ferry /opt/workflow/ferry/
 COPY config/ /opt/workflow/ferry/config/
 COPY template/ /opt/workflow/ferry/template/
+COPY static/ /opt/workflow/ferry/static/
 COPY docker/entrypoint.sh /opt/workflow/ferry/
-RUN mkdir -p logs static/uploadfile static/scripts static/template
 
 RUN chmod 755 /opt/workflow/ferry/entrypoint.sh
 RUN chmod 755 /opt/workflow/ferry/ferry
