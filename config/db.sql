@@ -498,7 +498,7 @@ COMMIT;
 
 BEGIN;
 INSERT INTO `sys_settings`(`id`, `create_time`, `update_time`, `delete_time`, `classify`, `content`) VALUES (3, '2020-08-19 01:00:19', '2020-08-19 12:40:47', NULL, 2, '[{\"ldap_field_name\": \"givenName\", \"local_field_name\": \"nick_name\", \"local_field_nick\": \"用户昵称\"}, {\"ldap_field_name\": \"\", \"local_field_name\": \"phone\", \"local_field_nick\": \"手机号\"}, {\"ldap_field_name\": \"\", \"local_field_name\": \"avatar\", \"local_field_nick\": \"头像\"}, {\"ldap_field_name\": \"\", \"local_field_name\": \"sex\", \"local_field_nick\": \"性别\"}, {\"ldap_field_name\": \"mail\", \"local_field_name\": \"email\", \"local_field_nick\": \"邮箱\"}, {\"ldap_field_name\": \"\", \"local_field_name\": \"remark\", \"local_field_nick\": \"备注\"}]');
-INSERT INTO `sys_settings`(`id`, `create_time`, `update_time`, `delete_time`, `classify`, `content`) VALUES (4, '2020-08-19 12:42:10', '2020-08-19 13:22:56', NULL, 1, '{\"logo\": \"https://www.fdevops.com/wp-content/uploads/2020/08/1597815294-ferry_logo_white.png\", \"name\": \"ferry 管理平台\"}');
+INSERT INTO `sys_settings`(`id`, `create_time`, `update_time`, `delete_time`, `classify`, `content`) VALUES (4, '2020-08-19 12:42:10', '2020-08-19 13:22:56', NULL, 1, '{\"logo\": \"https://pngimg.com/uploads/intel/small/intel_PNG24.png\", \"name\": \"Intel Workflow\"}');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
