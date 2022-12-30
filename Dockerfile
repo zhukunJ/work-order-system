@@ -6,7 +6,7 @@ ARG GOPROXY="https://goproxy.cn"
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o ferry .
 
-FROM alpine AS prod
+FROM python:3.9.6 AS prod
 
 
 RUN echo -e "http://mirrors.aliyun.com/alpine/v3.11/main\nhttp://mirrors.aliyun.com/alpine/v3.11/community" > /etc/apk/repositories \
