@@ -9,9 +9,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o ferry .
 FROM python:3.9.6 AS prod
 
 
-RUN echo -e "http://mirrors.aliyun.com/alpine/v3.11/main\nhttp://mirrors.aliyun.com/alpine/v3.11/community" > /etc/apk/repositories \
-    && apk add -U tzdata \
-    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
 
 WORKDIR /opt/workflow/ferry
 
