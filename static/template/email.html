@@ -1,44 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ferry</title>
-</head>
-<body>
-    <br>
-    {{ .Description }}：
-    <br>
-    <br>
-    <table>
-        <tr>
-            <td style="text-align: right">标题：</td>
-            <td>{{ .Title }}</td>
-        </tr>
-        <tr>
-            <td style="text-align: right">申请人：</td>
-            <td>{{ .Creator }}</td>
-        </tr>
-        <tr>
-            <td style="text-align: right">优先级：</td>
-            <td>{{ .PriorityValue }}</td>
-        </tr>
-        <tr>
-            <td style="text-align: right">申请时间：</td>
-            <td>{{ .CreatedAt }}</td>
-        </tr>
-    </table>
+<html>
 
-    <br>
-    <a href="{{ .Domain }}/#/process/handle-ticket?workOrderId={{ .Id }}&processId={{ .ProcessId }}" target="_blank">点击此处跳转到工单详情</a>
-</body>
-<style>
-    table {
-        border: 1px solid #ccc;
-        border-collapse:collapse;
-    }
-    td {
-        padding: 10px 15px 10px 15px;
-        border: 1px solid #ccc;
-    }
-</style>
+	<head>
+		<meta charset="utf-8">
+		<title>邮件模板</title>
+	</head>
+
+	<body>
+		<div style="background: #F0F2F5; padding: 315px; font-size: 14px;">
+
+				<div style="padding: 0 20px; padding-bottom: 20px;">
+					<div style="height: 20px; display: flex; justify-content: space-between; position: relative;">
+					</div>
+					<div style="background: #fff; padding: 0 15px; padding-bottom: 50px;">
+						<div style="padding: 0 9px; display: flex; justify-content: space-between; align-items: center; padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #DBDBDB;">
+
+
+						</div>
+						<div style="color: #41bf71; border: 1px solid #41BF71; background: #E0FFEC; padding: 14px 15px; display: flex; margin-top: 20px; margin-bottom: 30px;">
+							<div style="margin-left: 14px;">
+								<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">您有一条代办工单</div>
+								<div style="width: 600px; line-height: 24px;">
+									<a style="color: #006eff; text-decoration: none;" href="{{ .Domain }}/#/process/handle-ticket?workOrderId={{ .Id }}&processId={{ .ProcessId }}" target="_blank" rel="noopener">点击此处跳转</a> 查看工单详情。
+                                </div>
+							</div>
+						</div>
+						<div>
+						</div>
+						<div style="margin-top: 30px;">
+							<div><span style="font-size: 16px; font-weight: bold; position: relative; top: -4px;">订单信息</span></div>
+							<table style="width: 100%; border-spacing: 0px; border-collapse: collapse; border: none; margin-top: 20px;">
+								<tbody>
+									<tr style="height: 40px; background: #F6F6F6;">
+										<th style="border: 1px solid #DBDBDB; color: #666666; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;">标题</th>
+										<th style="border: 1px solid #DBDBDB; color: #666666; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;">申请人</th>
+										<th style="border: 1px solid #DBDBDB; color: #666666; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;">优先级</th>
+										<th style="border: 1px solid #DBDBDB; color: #666666; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;">申请时间</th>
+									</tr>
+									<tr style="height: 40px;">
+										<td style="border: 1px solid #DBDBDB; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;"><span style="border-bottom: 1px dashed rgb(204, 204, 204); position: relative;" t="5" times="">{{ .Title }}</span></td>
+										<td style="border: 1px solid #DBDBDB; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;"><span style="border-bottom: 1px dashed rgb(204, 204, 204); position: relative;" t="5" times="">{{ .Creator }}</span></td>
+										<td style="border: 1px solid #DBDBDB; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;"><span style="border-bottom: 1px dashed rgb(204, 204, 204); position: relative;" t="5" times="">{{ .PriorityValue }}</span></td>
+										<td style="border: 1px solid #DBDBDB; font-size: 14px; font-weight: normal; text-align: left; padding-left: 14px;"><span style="border-bottom: 1px dashed rgb(204, 204, 204); position: relative;" t="5" times="">{{ .CreatedAt }}</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<table class="responsive-table" style="text-size-adjust: 100%; margin-top: 18px; border-collapse: collapse !important; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td style="font-size: 12px; -webkit-font-smoothing: subpixel-antialiased; text-size-adjust: 100%;" align="center" valign="top">
+						</td>
+					</tr>
+					<tr style="padding: 0px; margin: 0px; font-size: 0px; line-height: 0;">
+						<td style="font-size: 12px; -webkit-font-smoothing: subpixel-antialiased; text-size-adjust: 100%;">&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="font-size: 12px; -webkit-font-smoothing: subpixel-antialiased; text-size-adjust: 100%;" align="center" valign="top">
+							<p style="line-height: 20.4px; text-size-adjust: 100%; font-family: 'Microsoft YaHei'!important; padding: 0px !important; margin: 0px !important; color: #7e8890 !important;"><span class="appleLinks">邮件由系统自动发送，请勿直接回复本邮件！</span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+
 </html>
+
